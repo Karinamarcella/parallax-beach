@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coral Moodlamp</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <a href="#" class="logo">Karina</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Portofolio</a></li>
+            </ul>
+        </header>
+        <section>
+            <h2 id="text"><span>Something is Glowing</span><br>Under the Sea</h2>
+            <img src="burung2.png" id="burung2">
+            <img src="burungkiri.png" id="burungkiri">
+            <img src="pohon.png" id="pohon">
+            <a href="#" id="btn">Let's Go!</a>
+            <img src="sand.png" id="sand">
+            <img src="laut.png" id="laut">
+        </section>
+        <div class="sec">
+            <h2>Introduction</h2>
+            <p>lorem ipsum silir dol amet<br>lorem ipsum</p>
+            <p>
+                Libero eget elit consectetur. Per lobortis varius malesuada vivamus tristique faucibus potenti penatibus potenti primis dui dapibus. Penatibus cum duis integer? Nascetur lacus; posuere mollis dolor etiam netus. Nascetur tortor sodales nisi himenaeos sociosqu tempus ligula volutpat consectetur maecenas fusce. Fames cubilia litora pulvinar aptent nec himenaeos adipiscing porta, morbi fames litora curabitur. A morbi vulputate molestie mauris. Ante quisque quis montes? Conubia nec tellus ligula! Eu ullamcorper lacinia nisi amet vehicula molestie laoreet. Adipiscing eget at proin convallis vivamus iaculis imperdiet dui. Ridiculus, purus leo enim vivamus class ac euismod porttitor.
+                </p>
+                <p>
+                Dapibus laoreet felis habitasse tortor adipiscing consequat feugiat nec imperdiet purus. Mattis facilisis vel etiam cras sociosqu, magnis sollicitudin sed. Nec molestie aptent vitae viverra interdum ullamcorper orci tortor sed malesuada. Molestie taciti sodales condimentum metus hendrerit elementum morbi tellus sem sociosqu. Tempor risus tincidunt dis sed rhoncus litora vulputate natoque nec! Adipiscing!
+                </p>
+                <p>
+                    Feugiat dictumst quis conubia luctus fames feugiat ultrices facilisi. Accumsan dolor purus dis pharetra massa sapien luctus vestibulum. Interdum purus massa lacus congue adipiscing blandit placerat etiam. Natoque velit habitant dictumst vitae tristique erat a congue aliquam enim class cursus! Justo litora inceptos interdum molestie taciti libero conubia nascetur. Sagittis, viverra netus fames malesuada dignissim. Senectus potenti purus augue sem ultrices eros ligula etiam. Aenean quis etiam adipiscing nec orci. Pellentesque, ultrices rhoncus pretium senectus. Adipiscing potenti conubia eros et metus quisque justo magnis! Rutrum hac!
+                    </p>
+                    <p>
+                    Suscipit phasellus montes nisi nullam lorem euismod. Tristique turpis pretium ornare inceptos magna risus ridiculus ultrices vestibulum imperdiet montes fames. Consectetur vulputate nunc purus mus nisl sapien id. Sed posuere ut sagittis sem. A venenatis a id vestibulum hac sodales metus orci et luctus sed. Ultricies felis molestie magnis sodales, mus velit eros non mus. At amet sodales ridiculus accumsan curabitur. Volutpat netus felis tortor orci mollis, curae; ante primis? Convallis consectetur, vestibulum per dapibus habitant at pellentesque. Sem dolor elementum libero quis.
+                    </p>
+
+        </div>
+        <script>
+            let text = document.getElementById('text');
+            let burung2 = document.getElementById('burung2');
+            let burungkiri = document.getElementById('burungkiri');
+            let btn = document.getElementById('btn');
+            let sand = document.getElementById('sand');
+            let pohon = document.getElementById('pohon');
+            let laut = document.getElementById('laut');
+            let header = document.getElementById('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+
+                text.style.top = 50 + value * -0.5 + '%';
+                burung2.style.top = value * -1.5 + 'px';
+                burung2.style.left = value * 2 + 'px';
+                burungkiri.style.top = value * -1.5 + 'px';
+                burungkiri.style.left = value * -5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                sand.style.top = value * -0.12 + 'px';
+                pohon.style.top = value * 0.25 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
